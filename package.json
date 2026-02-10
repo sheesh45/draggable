@@ -2,17 +2,32 @@
   "name": "@sheesh/vue-smart-draggable",
   "version": "1.0.0",
   "description": "Lightweight draggable component for Vue 3 with mobile and desktop support.",
-  "keywords": ["vue", "vue3", "drag", "draggable", "sortable", "typescript"],
+  "keywords": [
+    "vue",
+    "vue3",
+    "drag",
+    "draggable",
+    "sortable",
+    "typescript"
+  ],
   "type": "module",
   "main": "./dist/vue-smart-draggable.umd.js",
   "module": "./dist/vue-smart-draggable.es.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "vue-tsc && vite build"
   },
   "peerDependencies": {
     "vue": "^3.3.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.4",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vue-tsc": "^3.2.4"
+  }
 }
