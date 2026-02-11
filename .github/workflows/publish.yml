@@ -2,22 +2,26 @@ name: Publish Package to npm
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - "v*"
 
 jobs:
   publish:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
 
-      - run: npm install --include=dev
+      # 🔥 Clean install to fix rollup optional dependency issue
+      - run: rm -rf node_modules package-lock.json
+
+      - run: npm install
+
       - run: npm run build
 
       - run: npm publish --access public
