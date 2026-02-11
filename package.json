@@ -1,6 +1,6 @@
 {
   "name": "@sheesh/vue-smart-draggable",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight draggable component for Vue 3 with mobile and desktop support.",
   "keywords": [
     "vue",
