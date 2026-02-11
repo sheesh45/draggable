@@ -1,5 +1,5 @@
 <h1 align="center">
-  @sheesh/vue-smart-draggable
+  @sheeshk18/vue-smart-draggable
 </h1>
 
 <p align="center">
@@ -23,7 +23,7 @@
 ## 📦 Installation
 
 ```bash
-npm install @sheesh/vue-smart-draggable
+npm install @sheeshk18/vue-smart-draggable
 ```
 
 ---
@@ -33,7 +33,7 @@ npm install @sheesh/vue-smart-draggable
 ```vue
 <script setup lang="ts">
 import { ref } from 'vue'
-import Draggable from '@sheesh/vue-smart-draggable'
+import Draggable from '@sheeshk18/vue-smart-draggable'
 
 const items = ref([
   { id: 1, name: 'Quote Table' },
