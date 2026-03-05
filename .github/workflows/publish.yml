@@ -33,6 +33,13 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
+      - name: Validate npm authentication
+        run: |
+          npm whoami
+          npm ping
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Check if version is already published
         id: check_version
         run: |
